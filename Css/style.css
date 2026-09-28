@@ -1,0 +1,76 @@
+/*Configuração Geral*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+}
+
+/*Caixa Principal*/
+.container {
+    width: 650px;
+    margin: 35px auto;
+    padding: 35px 40px;
+
+    background: #151515;
+    border: 1px solid #333;
+    border-radius: 15px;
+
+    position: relative;
+
+    box-shadow:
+        0 0 20px rgba(229, 9, 47, 0.20),
+        0 0 50px rgba(229, 9, 47, 0.12);
+}
+
+
+/* Linha vermelha lateral */
+.container::before {
+    content: "";
+
+    position: absolute;
+
+    left: -1px;
+    top: 0;
+
+    width: 6px;
+    height: 100%;
+
+    background: #e5092f;
+
+    border-radius: 8px 0 0 8px;
+
+    box-shadow:
+        0 0 10px rgba(229, 9, 47, 0.7),
+        0 0 20px rgba(229, 9, 47, 0.4);
+}
+
+/*Títulos*/
+h1 {
+    color: #e5092f;
+    font-size: 32px;
+    border-bottom: 2px solid #e5092f;
+    padding-bottom: 15px;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+/*Textos*/
+p {
+    color: #d6d6d6;
+    line-height: 1.6;
+}
+
+/*Links*/
+a {
+    color: #e5092f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ffffff;
+}
